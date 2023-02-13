@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter, Navigate, Router } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { Articulo } from '../components/articulo';
 import { Footer } from '../components/common/Footer';
 import { Navigation } from '../components/common/Navigation';
@@ -8,7 +8,7 @@ import ScrollToTop from '../utils/ScrollToTop';
 
 export const Rutas = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             {/* HEADER Y NAVEGACION */}
             <Navigation />
 
@@ -30,6 +30,6 @@ export const Rutas = () => {
             {/* FOOTER*/}
             <Footer />
 
-        </BrowserRouter>
+        </HashRouter>
     )
 }

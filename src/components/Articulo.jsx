@@ -11,16 +11,18 @@ export const Articulo = () => {
 
     useEffect(() => {
         let articulo = articles.filter(article => article.id === params.id);
-
         setArticulo(articulo[0]);
-    }, []);
+    
+        // Cambiar la URL del navegador para reflejar el ID del artículo
+        window.location.hash = `#/${params.type}/${params.id}`;
+    }, [params.id, params.type]);
 
     return (
         <section>
             {articulos && (
                 <HelmetProvider>
                     <Helmet>
-                        <title>{articulos.titulo + " - Chpanth"}</title>
+                        <title>{articulos.titulo + " | Chpanth"}</title>
                     </Helmet>
                     <div className="content-sec">
                         <div className="prodct-bx">

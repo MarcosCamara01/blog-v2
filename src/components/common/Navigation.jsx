@@ -71,17 +71,17 @@ export const Navigation = () => {
                             </div>
                             <ul className={`list__show ${openMenuIndex === 0 ? 'show' : ''}`}>
                                 <li className="list__inside">
-                                    <a href="/perifericos/ratones-2023" className="nav__link nav__link--inside">Mejores ratones gaming</a>
+                                    <Link to={"/perifericos/ratones-2023"} className="nav__link nav__link--inside">Mejores ratones gaming</Link>
                                 </li>
                             </ul>
                             <ul className={`list__show ${openMenuIndex === 0 ? 'show' : ''}`}>
                                 <li className="list__inside">
-                                    <a href="/perifericos/teclados-2023" className="nav__link nav__link--inside">Mejores teclados gaming</a>
+                                    <Link to={"/perifericos/teclados-2023"} className="nav__link nav__link--inside">Mejores teclados gaming</Link>
                                 </li>
                             </ul>
                             <ul className={`list__show ${openMenuIndex === 0 ? 'show' : ''}`}>
                                 <li className="list__inside">
-                                    <a href="/perifericos/auriculares-2023" className="nav__link nav__link--inside">Mejores auriculares gaming</a>
+                                    <Link to={"/perifericos/auriculares-2023"} className="nav__link nav__link--inside">Mejores auriculares gaming</Link>
                                 </li>
                             </ul>
                         </li>
@@ -94,7 +94,7 @@ export const Navigation = () => {
                             </div>
                             <ul className={`list__show ${openMenuIndex === 1 ? 'show' : ''}`}>
                                 <li className="list__inside">
-                                    <a href="/moviles/moviles-cp" className="nav__link nav__link--inside">Móviles calidad/precio</a>
+                                    <Link to={"/moviles/moviles-cp"} className="nav__link nav__link--inside">Móviles calidas/precio</Link>
                                 </li>
                             </ul>
                         </li>
@@ -107,7 +107,7 @@ export const Navigation = () => {
                             </div>
                             <ul className={`list__show ${openMenuIndex === 2 ? 'show' : ''}`}>
                                 <li className="list__inside">
-                                    <a href="/portatiles/portatiles-cp" className="nav__link nav__link--inside">Portátiles calidad/precio</a>
+                                    <Link to={"/portatiles/portatiles-cp"} className="nav__link nav__link--inside">Portátiles calidas/precio</Link>
                                 </li>
                             </ul>
                         </li>
@@ -120,7 +120,7 @@ export const Navigation = () => {
                             </div>
                             <ul className={`list__show ${openMenuIndex === 3 ? 'show' : ''}`}>
                                 <li className="list__inside">
-                                    <a href="/tablets/tablets-cp" className="nav__link nav__link--inside">Tablets calidad/precio</a>
+                                    <Link to={"/tablets/tablets-cp"} className="nav__link nav__link--inside">Tablets calidas/precio</Link>
                                 </li>
                             </ul>
                         </li>
