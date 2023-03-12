@@ -40,7 +40,7 @@ export const Articulo = () => {
                                             <h3>{content.subtitulo}</h3>
                                         </div>
                                         <div className="imgca-bx">
-                                            <a href={content.link} target="_blank"><img src={'/images/' + content.img + '.webp'} alt={content.titulo} /></a>
+                                            <a href={content.link} target="_blank"><img src={'./images/' + content.img + '.webp'} alt={content.titulo} /></a>
                                             <ul>
                                                 {content.caracteristicas.map((item, index) => (
                                                     <li key={index}>{item}</li>
